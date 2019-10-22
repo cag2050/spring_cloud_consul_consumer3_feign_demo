@@ -14,7 +14,8 @@
 2. src/main/resources/application.properties 中：1.配置 Actuator 监控；2.注释行`spring.cloud.consul.discovery.register=false
 `，让应用注册到 consul
 3. 启动类添加注解：@EnableHystrixDashboard
-4. 打开 http://localhost:8505/actuator/hystrix.stream ，可以看到一些具体的数据；打开 http://localhost:8505/hystrix ，在界面网址部分输入：http://localhost:8505/actuator/hystrix.stream ，可以看到良好的图形化界面
+4. 打开 http://localhost:8505/actuator/hystrix.stream ，可以看到一些具体的数据；打开 http://localhost:8505/hystrix ，在界面Hystrix
+ Dashboard文字下方输入框输入：http://localhost:8505/actuator/hystrix.stream ，可以看到良好的图形化界面
 > 参考：https://www.fangzhipeng.com/springcloud/2018/08/13/sc-f13-turbine.html ，https://github.com/forezp/springcloud-book-greenwich
 
 ### 注意点
